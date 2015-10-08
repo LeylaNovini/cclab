@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    background-image: url("img/cloud.jpg");
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+
+img#duck {
+	display: none;
+}
+
+img#duck2 {
+	display: none;
+}
