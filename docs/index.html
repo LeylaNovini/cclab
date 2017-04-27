@@ -5,13 +5,13 @@
 	<title>Rubber Duckie Explores the Open Sea</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="js/paper-full.js"></script>
-	
+
 </head>
 <body>
+	<p>Press arrow keys to move the duck!</p>
 	<img id="duck" src="img/duck.png" alt="rubberduck"/>
     <audio src="img/sailorshornpipe.mp3" autoplay>
     </audio>
-
 	<canvas id="canvas" resize hidpi="off"></canvas>
     <script type="text/paperscript" canvas="canvas">
         // Code ported to Paper.js from http://the389.com/9/1/
@@ -123,16 +123,16 @@
         // duck functions
 
         function onKeyDown(event) {
-           if (event.key == 'd') {
+           if (event.key == 'right') {
             raster.position.x += 20;
            }
-           if (event.key == 'x') {
+           if (event.key == 'down') {
             raster.position.y += 20;
            }
-           if (event.key == 'a') {
+           if (event.key == 'left') {
             raster.position.x -= 20;
            }
-           if (event.key == 'w') {
+           if (event.key == 'up') {
             raster.position.y -= 20;
            }
         }

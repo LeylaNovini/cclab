@@ -19,3 +19,8 @@ img#duck {
 img#duck2 {
 	display: none;
 }
+
+p {
+  float: right;
+  padding-right: 10px;
+}
